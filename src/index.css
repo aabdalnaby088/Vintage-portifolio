@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import "tailwindcss";
+
+body {
+  background-color: #2A397E; 
+  background-image: url("/public/assets/imperfections\ 10percent.png");
+  background-position: center; 
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #ECE0BA;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+
+}
+
+.text-stroke {
+  text-shadow:
+    -3px -3px 0 black,
+     3px -3px 0 black,
+    -3px  3px 0 black,
+     3px  3px 0 black;
+}
+

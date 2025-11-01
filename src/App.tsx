@@ -1,10 +1,17 @@
+import NavBar from "./Components/NavBar"
 
 function App() {
   return (
     <>
-      <div>
+      <div className="flex justify-center" >
+
+        <NavBar/>
+        
       </div>
-      <h1 className='text-red-600 text-center'>Ahmed 3amk ya mana</h1>
+
+
+      <h1 className="flex justify-center text-[80px] text-stroke">Design that never goes out of style</h1>
+
     </>
   )
 }
