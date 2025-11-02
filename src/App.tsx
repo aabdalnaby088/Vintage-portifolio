@@ -1,16 +1,13 @@
-import NavBar from "./Components/NavBar"
+import AboutMe from "./sections/AboutMe"
 
 function App() {
   return (
     <>
-      <div className="flex justify-center" >
-
-        <NavBar/>
-        
+      <div >
+        <AboutMe/>
       </div>
 
 
-      <h1 className="flex justify-center text-[80px] text-stroke">Design that never goes out of style</h1>
 
     </>
   )
