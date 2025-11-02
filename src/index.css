@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 body {
-  background-color: #2A397E; 
-  background-image: url("/public/assets/imperfections\ 10percent.png");
-  background-position: center; 
+  background-color: #2A397E;
+  background-image: url("/assets/imperfections\ 10percent.png");
+  background-position: center;
   /* background-repeat: no-repeat; */
   background-size: cover;
   margin: 0;
