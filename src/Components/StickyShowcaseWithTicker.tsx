@@ -22,7 +22,7 @@ export default function StickyShowcaseWithTicker({
       />
 
       <header className="px-6 pt-16 pb-12 w-full">
-        <h1 className="flex justify-center text-[80px] text-stroke max-lg:text-center max-md:text-[45px]">BEHIND THE CURTAINS: MEET Ahmed</h1>
+        <h1 className="flex justify-center text-[80px] text-stroke max-lg:text-center max-md:text-[45px]">BEHIND THE CURTAINS: MEET Abdelrahman</h1>
       </header>
 
       <section ref={sectionRef} className="relative mx-auto max-w-5xl px-6 flex flex-col items-center">
@@ -49,7 +49,8 @@ export default function StickyShowcaseWithTicker({
             </motion.div>
           </div>
         </div>
-        <div className="w-full max-w-3xl opacity-90 relative z-0 text-center max-lg:w-[80%] -translate-y-10">
+
+        <div className="w-full max-w-3xl opacity-90 relative z-0 text-center max-lg:w-[80%] -translate-y-10 max-md:mt-3 mt-10">
           <p className="text-[40px] drop-shadow-2xl leading-tight lg:text-[35px] max-md:text-[28px]">
             "I'm Abdelrahman Sameh, a UI/UX & Product Designer with a software engineering background. I design user-centered experiences and turn them into functional, working products."
           </p>
