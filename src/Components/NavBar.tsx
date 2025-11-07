@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function NavBar() {
@@ -9,9 +9,9 @@ export default function NavBar() {
     <nav className="flex justify-center items-center py-10 w-full relative z-50">
       {/* ========= DESKTOP NAV ========= */}
       <div
-        className="hidden sm:flex flex-wrap justify-evenly items-center w-[40%] max-md:w-[60%] rounded-[20px] border-4 border-[#ff4d4d]
+        className="hidden sm:flex flex-wrap justify-evenly items-center w-[60%] max-md:w-[60%] rounded-[20px] border-4 border-[#ff4d4d]
                     shadow-[0_0_10px_#ff4d4d,0_0_20px_#ff4d4d,0_0_40px_#ff4d4d]
-                    bg-transparent
+                    bg-transparent 
                     transition-all duration-300 hover:shadow-[0_0_15px_#ff8080,0_0_30px_#ff8080,0_0_60px_#ff8080]"
       >
         <div className="flex flex-wrap justify-evenly w-full items-center gap-10 px-10 py-3 rounded-2xl border-3 border-[#ECE0BA] bg-transparent">
