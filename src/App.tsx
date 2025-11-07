@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer"
 import AboutMe from "./sections/AboutMe"
 import ShowCase from "./sections/ShowCase"
 
@@ -7,6 +8,7 @@ function App() {
       <div >
         <AboutMe/>
         <ShowCase/>
+        <Footer/>
       </div>
 
 
