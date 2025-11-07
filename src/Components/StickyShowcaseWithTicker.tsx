@@ -48,7 +48,7 @@ export default function StickyShowcaseWithTicker() {
           </div>
         </div>
 
-        <div className="w-full max-w-3xl opacity-90 relative z-0 text-center max-lg:w-[80%] -translate-y-10 max-md:mt-3 mt-10">
+        <div className="w-full max-w-3xl opacity-90 relative z-0 text-center max-lg:w-[80%] -translate-y-10 max-md:mt-3 mt-18">
           <p className="text-[40px] drop-shadow-2xl leading-tight lg:text-[35px] max-md:text-[28px]">
             " I’m Abdelrahman Sameh — a passionate UI/UX & Product Designer who
             transforms ideas into intuitive, beautiful, and high-performing

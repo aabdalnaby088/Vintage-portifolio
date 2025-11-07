@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <footer
-      className="bg-[url('/assets/PaperTexture.png')] bg-cover bg-center bg-no-repeat bg-[#677F75] w-[80%] mx-auto rounded-[20px] mt-10 mb-10 flex-col justify-center items-center pb-10 border-2 overflow-hidden"
+      className="bg-[url('/assets/PaperTexture.png')] bg-cover bg-center bg-no-repeat bg-[#677F75] w-[80%] mx-auto rounded-[20px] mt-10 mb-10 flex-col justify-center items-center  border-4 overflow-hidden"
     >
       <div className="main flex justify-center items-center max-md:flex-col pt-7">
 
@@ -69,9 +69,15 @@ export default function Footer() {
 </button>
 
 
-        <h4 className="mt-5 text-[25px] max-md:text-[15px] max-md:mt-3 text-stroke">
+<div className="flex justify-center items-center">
+
+  <img src="/public/assets/leftTree.png" className="w-[20%] max-md:hidden"  />
+        <h4 className="mt-5 text-[25px] max-md:text-[15px] max-md:mt-3 ">
           © aBDELRAHMAN sAMEH. All rights reserved
         </h4>
+          <img src="/public/assets/RightTree.png"  className="w-[20%] max-md:hidden"  />
+
+        </div>
       </motion.div>
     </footer>
   );
