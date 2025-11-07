@@ -1,12 +1,6 @@
 
 
-export default function YellowCard({
-  imageUrl,
-  alt = "Access pass — Abdelrahman",
-}: {
-  imageUrl: string;
-  alt?: string;
-}) {
+export default function YellowCard() {
   return (
     <img
       src={imageUrl}

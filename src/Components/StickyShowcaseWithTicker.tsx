@@ -1,21 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import cardImageSrc from "../assets/card.png";
 import BottomTicker from "./BottomTicker";
 import YellowCard from "./YellowCard";
 
-export default function StickyShowcaseWithTicker({
-  cardImage = cardImageSrc,
-  tickerItems = ["• AVAILABLE FOR NEW PROJECTS", "• PRODUCT DESIGN • UI/UX • FRONTEND"],
-} : {
-  cardImage?: string;
-  tickerItems?: string[];
-}) {
+export default function StickyShowcaseWithTicker() {
   const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { margin: "-20% 0px -20% 0px" });
+  const inView = useInView(sectionRef, { margin: "0px 0px -20% 0px" });
 
   return (
-    <div className="relative min-h-[180vh]">
+    <div className="relative min-h-[180vh] overflow-hidden">
       <div
         aria-hidden
         className="pointer-events-none fixed inset-0 opacity-14"
@@ -26,8 +19,8 @@ export default function StickyShowcaseWithTicker({
       </header>
 
       <section ref={sectionRef} className="relative mx-auto max-w-5xl px-6 flex flex-col items-center">
-        <div className="w-full flex justify-center max-lg:w-[70%]">
-          <div className="sticky top-1/2 -translate-y-2/7 z-10 max-lg:-translate-y-2/5 max-md:-translate-y-4/7">
+        <div className="w-full flex justify-center max-lg:w-[65%]">
+          <div className="sticky top-1/2 -translate-y-1/5 z-10 max-lg:-translate-y-2/5 max-md:-translate-y-4/7">
             <motion.div
               initial={{ opacity: 0, scale: 0.2 }}
               animate={{
@@ -45,7 +38,7 @@ export default function StickyShowcaseWithTicker({
                 justifyContent: "center",
               }}
             >
-              <YellowCard imageUrl={cardImage} alt="Access pass — Abdelrahman" />
+              <YellowCard  />
             </motion.div>
           </div>
         </div>
@@ -56,8 +49,7 @@ export default function StickyShowcaseWithTicker({
           </p>
         </div>
       </section>
-
-      <BottomTicker items={tickerItems} />
+      <BottomTicker />
     </div>
   );
 }
