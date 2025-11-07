@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ProjectsCards() {
   return (
     <>
-      <div className="mt-10 pt-10 max-md:mt-0 max-md:pt-8 overflow-hidden">
+      <div className="mt-10 mb-5 pt-10 max-md:mt-0 max-md:pt-8 overflow-hidden">
         <motion.div
           className="flex justify-evenly max-md:flex-col max-md:justify-center items-center"
           initial={{ opacity: 0, x: -200 }}
@@ -16,6 +16,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/1.png"
@@ -29,6 +30,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/2.png"
@@ -42,6 +44,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/3.png"
@@ -64,6 +67,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/4.png"
@@ -77,6 +81,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/5.png"
@@ -90,6 +95,7 @@ export default function ProjectsCards() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-[25%] max-md:w-[60%]"
+            title="I SEE YOU 👀"
           >
             <img
               src="/public/assets/Projects-Cards/6.png"
