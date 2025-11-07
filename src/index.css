@@ -22,3 +22,27 @@ body {
      3px  3px 0 black;
 }
 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE0BA; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4d4d; 
+  border-radius: 20px;
+  border: 2px solid #ff4d4d; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6666; 
+}
+
+::selection {
+  background-color: #ff4d4d; 
+  color: ECE0BA; 
+}
+
