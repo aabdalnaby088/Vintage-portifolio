@@ -1,0 +1,10 @@
+[33m9045120[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to HEAD@{1}
+[33mc75c25c[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: pull origin master: Fast-forward
+[33m9045120[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{2}: checkout: moving from heroSection to master
+[33md436e07[m[33m ([m[1;32mheroSection[m[33m)[m HEAD@{3}: commit: hero section with responsive completed
+[33m41775b2[m[33m ([m[1;31morigin/ticket-and-scrollBar-section[m[33m, [m[1;32mmain[m[33m)[m HEAD@{4}: checkout: moving from main to heroSection
+[33m41775b2[m[33m ([m[1;31morigin/ticket-and-scrollBar-section[m[33m, [m[1;32mmain[m[33m)[m HEAD@{5}: pull origin ticket-and-scrollBar-section: Fast-forward
+[33m60f5617[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{6}: Branch: renamed refs/heads/intiation to refs/heads/main
+[33m60f5617[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{8}: commit: configration of main css code & developing fully responsive navbar
+[33m9045120[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{9}: checkout: moving from master to intiation
+[33m9045120[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{10}: clone: from https://github.com/aabdalnaby088/Vintage-portifolio.git
