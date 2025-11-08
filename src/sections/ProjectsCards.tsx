@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 export default function ProjectsCards() {
@@ -19,7 +18,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/1.png"
+              src="/assets/Projects-Cards/1.png"
               className=" transition-transform duration-500 hover:scale-110"
               alt="Tamema Project"
             />
@@ -33,7 +32,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/2.png"
+              src="/assets/Projects-Cards/2.png"
               className=" transition-transform duration-500 hover:scale-110"
               alt="Tamema Mobile App Project"
             />
@@ -47,7 +46,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/3.png"
+              src="/assets/Projects-Cards/3.png"
               className="transition-transform duration-500 hover:scale-110"
               alt="Read Begin Project"
             />
@@ -70,7 +69,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/4.png"
+              src="/assets/Projects-Cards/4.png"
               className="transition-transform duration-500 hover:scale-110"
               alt="Shougun Project"
             />
@@ -84,7 +83,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/5.png"
+              src="/assets/Projects-Cards/5.png"
               className="transition-transform duration-500 hover:scale-110"
               alt="Tamema Mobile App Project"
             />
@@ -98,7 +97,7 @@ export default function ProjectsCards() {
             title="I SEE YOU 👀"
           >
             <img
-              src="/public/assets/Projects-Cards/6.png"
+              src="/assets/Projects-Cards/6.png"
               className="transition-transform duration-500 hover:scale-110"
               alt="Read Begin Project"
             />

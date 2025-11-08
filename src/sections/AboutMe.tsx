@@ -1,59 +1,66 @@
-
-import NavBar from "../Components/NavBar";
-import StickyShowcaseWithTicker from "../Components/StickyShowcaseWithTicker";
-import { Eye } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import BottomTicker from "../Components/BottomTicker";
+import YellowCard from "../Components/YellowCard";
 
 export default function AboutMe() {
+  const sectionRef = useRef(null);
+  const inView = useInView(sectionRef, { margin: "0px 0px -20% 0px" });
+
   return (
-    <div>
-      <div className="h-screen">
-        <NavBar />
-        <div className="hero-section flex justify-center items-center max-md:flex-col-reverse mt-4 overflow-hidden ">
-          
-          {/* Text Section (from left) */}
-          <motion.div
-            initial={{ x: "-100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 25, duration: 1, }}
-      
-            className="for-text text-center w-[40%] max-md:w-[80%] relative"
-          >
-            {/* <img
-              src="/assets/star.png"
-              className="absolute w-[27%] -top-20 -left-17 max-md:hidden "
-              alt="star"
-            /> */}
-            <h1 className="flex justify-center text-[115px] text-stroke max-sm:text-center max-md:text-[47px] leading-[1.1]">
-              Design that never goes out of style
-            </h1>
+    <div id="aboutMe" className="relative min-h-[180vh] overflow-hidden mt-20 max-md:mt-0 max-md:min-h-0">
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 opacity-14"
+      />
 
-<a
-  href="https://drive.google.com/file/d/17gqXwwi38ZvCCOtQ3H6D5e8RJ1DKb6ZC/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer border-4 rounded-[20px] w-[30%] border-[#ff4d4d] text-[35px] flex items-center justify-evenly ms-12 mt-3 max-md:w-[50%] max-md:ms-20 max-md:text-[30px] hover:bg-[#ECE0BA] hover:text-[#ff4d4d] transition-all duration-300"
->
-  Resume <Eye />
-</a>
+      <header className="px-6 pt-16 pb-12 w-full">
+        <h1 className="flex justify-center text-[80px] text-stroke max-lg:text-center max-md:text-[45px]">
+          BEHIND THE CURTAINS: MEET Abdelrahman
+        </h1>
+      </header>
 
-          </motion.div>
-
-
-          <motion.div
-            initial={{ x: "100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 25, duration: 1 }}
-   
-            className="for-posters w-[38%] flex justify-center max-md:w-[90%] max-md:mb-5"
-          >
-            <img src="/assets/posters.png" alt="posters" className="w-[80%]" />
-          </motion.div>
-
+      <section
+        ref={sectionRef}
+        className="relative mx-auto max-w-5xl px-6 flex flex-col items-center"
+      >
+        <div className="w-full flex justify-center max-lg:w-[65%]">
+          <div className="sticky top-1/2 -translate-y-8 z-10 max-lg:-translate-y-2/5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{
+                opacity: inView ? 1 : 0,
+                scale: inView ? 1.5 : 0.2,
+              }}
+              transition={{
+                duration: 0.8,
+                ease: [0.16, 1, 0.3, 1],
+                delay: 0.1,
+              }}
+              style={{
+                transformOrigin: "center center",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <YellowCard />
+            </motion.div>
+          </div>
         </div>
-      </div>
 
-      <StickyShowcaseWithTicker />
+        <div className="w-full max-w-3xl opacity-90 relative z-0 text-center max-lg:w-[80%] -translate-y-6 max-md:mt-3 mt-18">
+          <p className="text-[40px] drop-shadow-2xl leading-tight lg:text-[35px] max-md:text-[28px]">
+            " I’m Abdelrahman Sameh — a passionate UI/UX & Product Designer who
+            transforms ideas into intuitive, beautiful, and high-performing
+            digital experiences. With strong Frontend development skills and a
+            deep understanding of how design and technology connect, I bridge
+            creativity with functionality. I’m driven by the challenge of
+            crafting user-centered products that not only look stunning but also
+            deliver seamless, real-world performance. "
+          </p>
+        </div>
+      </section>
+      <BottomTicker />
     </div>
   );
 }
