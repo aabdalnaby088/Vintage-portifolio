@@ -8,7 +8,7 @@ export default function BottomTicker() {
         <div
         >
           <h6></h6>
-  <div className="flex flex-nowrap whitespace-nowrap font-black text-[#F5E8C7] text-[40px] max-lg:text-[28px] max-md:text-[16px] leading-tight tracking-wide uppercase drop-shadow-md">
+  <div className="flex flex-nowrap whitespace-nowrap font-black text-[#F5E8C7] text-[30px] max-lg:text-[25px] max-md:text-[16px] leading-tight tracking-wide uppercase drop-shadow-md">
           <div className="flex items-center">
               <span className="tracking-widest text-stroke">
                 AVAILABLE FOR NEW PROJECTS
