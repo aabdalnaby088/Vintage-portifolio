@@ -39,7 +39,7 @@ export default function AboutMe() {
 
           </motion.div>
 
-          {/* Posters Section (from right) */}
+
           <motion.div
             initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
